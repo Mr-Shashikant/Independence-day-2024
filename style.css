@@ -166,11 +166,36 @@ h1 {
     transition: all 0.5s ease-in-out;
 }
 
-.descriptiom {
-    background-color: #118806;
-    color: #fff;
-    padding: 10px;
+.description {
+    background-color: #ffffff;
+    color: #333;
+    box-shadow: 0 0 10px #0000ff89;
+    padding: 10px 30px;
     border-radius: 10px;
     width: 80%;
     text-align: center;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description::before {
+    content: '';
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: #ff9934;
+    left: -25px;
+    border-radius: 50%;
+}
+.description::after {
+    content: '';
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: #118806;
+    right: -25px;
+    border-radius: 50%;
 }
